@@ -21,7 +21,7 @@
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.1">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
     
     
       
@@ -2590,11 +2590,14 @@
 <p>To add an image, use the <code>addImage</code> method to sections, headers, footers, textruns, or table cells.</p>
 <div class="highlight"><pre><span></span><code><span class="cp">&lt;?php</span>
 
-<span class="nv">$section</span><span class="o">-&gt;</span><span class="na">addImage</span><span class="p">(</span><span class="nv">$src</span><span class="p">,</span> <span class="p">[</span><span class="nv">$style</span><span class="p">]);</span>
+<span class="nv">$section</span><span class="o">-&gt;</span><span class="na">addImage</span><span class="p">(</span><span class="nv">$src</span><span class="p">,</span> <span class="p">[</span><span class="nv">$style</span><span class="p">],</span> <span class="p">[</span><span class="nv">$isWatermark</span><span class="p">],</span> <span class="p">[</span><span class="nv">$name</span><span class="p">],</span> <span class="p">[</span><span class="nv">$altText</span><span class="p">]);</span>
 </code></pre></div>
 <ul>
 <li><code>$src</code>. String path to a local image, URL of a remote image or the image data, as a string. Warning: Do not pass user-generated strings here, as that would allow an attacker to read arbitrary files or perform server-side request forgery by passing file paths or URLs instead of image data.</li>
 <li><code>$style</code>. See <a href="../styles/image.html"><code>Styles &gt; Image</code></a>.</li>
+<li><code>$isWatermark</code>. Used by <a href="watermark.html"><code>Elements &gt; Watermark</code></a>.</li>
+<li><code>$name</code>. Name of the image.</li>
+<li><code>$altText</code>. Description of the image used by screen readers.</li>
 </ul>
 <p>Examples:</p>
 <div class="highlight"><pre><span></span><code><span class="cp">&lt;?php</span>
@@ -2613,9 +2616,9 @@
 <span class="nv">$footer</span> <span class="o">=</span> <span class="nv">$section</span><span class="o">-&gt;</span><span class="na">addFooter</span><span class="p">();</span>
 <span class="nv">$footer</span><span class="o">-&gt;</span><span class="na">addImage</span><span class="p">(</span><span class="s1">&#39;http://example.com/image.php&#39;</span><span class="p">);</span>
 <span class="nv">$textrun</span> <span class="o">=</span> <span class="nv">$section</span><span class="o">-&gt;</span><span class="na">addTextRun</span><span class="p">();</span>
-<span class="nv">$textrun</span><span class="o">-&gt;</span><span class="na">addImage</span><span class="p">(</span><span class="s1">&#39;http://php.net/logo.jpg&#39;</span><span class="p">);</span>
+<span class="nv">$textrun</span><span class="o">-&gt;</span><span class="na">addImage</span><span class="p">(</span><span class="s1">&#39;http://php.net/logo.jpg&#39;</span><span class="p">,</span> <span class="k">null</span><span class="p">,</span> <span class="k">false</span><span class="p">,</span> <span class="k">null</span><span class="p">,</span> <span class="s1">&#39;PHP logo&#39;</span><span class="p">);</span>
 <span class="nv">$source</span> <span class="o">=</span> <span class="nb">file_get_contents</span><span class="p">(</span><span class="s1">&#39;/path/to/my/images/earth.jpg&#39;</span><span class="p">);</span>
-<span class="nv">$textrun</span><span class="o">-&gt;</span><span class="na">addImage</span><span class="p">(</span><span class="nv">$source</span><span class="p">);</span>
+<span class="nv">$image</span> <span class="o">=</span> <span class="nv">$textrun</span><span class="o">-&gt;</span><span class="na">addImage</span><span class="p">(</span><span class="nv">$source</span><span class="p">);</span>
 </code></pre></div>
 
 
