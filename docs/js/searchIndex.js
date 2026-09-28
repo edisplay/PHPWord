@@ -4461,6 +4461,56 @@ Search.appendIndex(
             "summary": "Get\u0020relationship\u0020array.",
             "url": "classes/PhpOffice-PhpWord-Reader-Word2007.html#method_getRels"
         },                {
+            "fqsen": "\\PhpOffice\\PhpWord\\Reader\\WPS",
+            "name": "WPS",
+            "summary": "Reader\u0020for\u0020Microsoft\u0020Works\u0020WPS\u0020documents\u0020\u0028Works\u00208\u0020and\u0020later\u0029.",
+            "url": "classes/PhpOffice-PhpWord-Reader-WPS.html"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpWord\\Reader\\WPS\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/PhpOffice-PhpWord-Reader-WPS.html#method___construct"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpWord\\Reader\\WPS\u003A\u003AcanRead\u0028\u0029",
+            "name": "canRead",
+            "summary": "Can\u0020the\u0020current\u0020Reader\u0020read\u0020the\u0020file\u003F",
+            "url": "classes/PhpOffice-PhpWord-Reader-WPS.html#method_canRead"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpWord\\Reader\\WPS\u003A\u003Aload\u0028\u0029",
+            "name": "load",
+            "summary": "Loads\u0020PhpWord\u0020from\u0020file.",
+            "url": "classes/PhpOffice-PhpWord-Reader-WPS.html#method_load"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpWord\\Reader\\WPS\u003A\u003AextractText\u0028\u0029",
+            "name": "extractText",
+            "summary": "Extract\u0020the\u0020UTF\u002D16LE\u0020text\u0020from\u0020the\u0020CONTENTS\u0020stream\u0020of\u0020a\u0020WPS\u0020document.",
+            "url": "classes/PhpOffice-PhpWord-Reader-WPS.html#method_extractText"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpWord\\Reader\\WPS\u003A\u003AreadContentsStream\u0028\u0029",
+            "name": "readContentsStream",
+            "summary": "Read\u0020the\u0020OLE\u0020\u0022CONTENTS\u0022\u0020stream\u0020of\u0020a\u0020WPS\u0020document.",
+            "url": "classes/PhpOffice-PhpWord-Reader-WPS.html#method_readContentsStream"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpWord\\Reader\\WPS\u003A\u003AgetUShort\u0028\u0029",
+            "name": "getUShort",
+            "summary": "Read\u0020a\u002016\u002Dbit\u0020unsigned\u0020integer\u0020\u0028little\u0020endian\u0029.",
+            "url": "classes/PhpOffice-PhpWord-Reader-WPS.html#method_getUShort"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpWord\\Reader\\WPS\u003A\u003AgetULong\u0028\u0029",
+            "name": "getULong",
+            "summary": "Read\u0020a\u002032\u002Dbit\u0020unsigned\u0020integer\u0020\u0028little\u0020endian\u0029.",
+            "url": "classes/PhpOffice-PhpWord-Reader-WPS.html#method_getULong"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpWord\\Reader\\WPS\u003A\u003ACHUNK_MAGIC",
+            "name": "CHUNK_MAGIC",
+            "summary": "Chunk\u0020block\u0020tag.",
+            "url": "classes/PhpOffice-PhpWord-Reader-WPS.html#constant_CHUNK_MAGIC"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpWord\\Reader\\WPS\u003A\u003ACHUNK_BLOCK_SIZE",
+            "name": "CHUNK_BLOCK_SIZE",
+            "summary": "Chunk\u0020block\u0020size.",
+            "url": "classes/PhpOffice-PhpWord-Reader-WPS.html#constant_CHUNK_BLOCK_SIZE"
+        },                {
             "fqsen": "\\PhpOffice\\PhpWord\\Settings",
             "name": "Settings",
             "summary": "PHPWord\u0020settings\u0020class.",
@@ -16561,6 +16611,11 @@ Search.appendIndex(
             "summary": "Write\u0020default\u0020font\u0020and\u0020other\u0020default\u0020styles.",
             "url": "classes/PhpOffice-PhpWord-Writer-Word2007-Part-Styles.html#method_writeDefaultStyles"
         },                {
+            "fqsen": "\\PhpOffice\\PhpWord\\Writer\\Word2007\\Part\\Styles\u003A\u003AwriteMissingTitleStyles\u0028\u0029",
+            "name": "writeMissingTitleStyles",
+            "summary": "Write\u0020a\u0020style\u0020for\u0020each\u0020title\u0020depth\u0020used\u0020without\u0020addTitleStyle\u0028\u0029,\nso\u0020that\u0020the\u0020w\u003ApStyle\u0020of\u0020the\u0020title\u0020resolves\u0020and\u0020a\u0020heading\u0020keeps\u0020its\u0020outline\u0020level.",
+            "url": "classes/PhpOffice-PhpWord-Writer-Word2007-Part-Styles.html#method_writeMissingTitleStyles"
+        },                {
             "fqsen": "\\PhpOffice\\PhpWord\\Writer\\Word2007\\Part\\Styles\u003A\u003AwriteFontStyle\u0028\u0029",
             "name": "writeFontStyle",
             "summary": "Write\u0020font\u0020style.",
@@ -16906,6 +16961,11 @@ Search.appendIndex(
             "summary": "Write\u0020numbering.",
             "url": "classes/PhpOffice-PhpWord-Writer-Word2007-Style-Paragraph.html#method_writeNumbering"
         },                {
+            "fqsen": "\\PhpOffice\\PhpWord\\Writer\\Word2007\\Style\\Paragraph\u003A\u003AsetOutlineLevel\u0028\u0029",
+            "name": "setOutlineLevel",
+            "summary": "Set\u0020the\u0020outline\u0020level\u0020of\u0020a\u0020heading\u0020style.",
+            "url": "classes/PhpOffice-PhpWord-Writer-Word2007-Style-Paragraph.html#method_setOutlineLevel"
+        },                {
             "fqsen": "\\PhpOffice\\PhpWord\\Writer\\Word2007\\Style\\Paragraph\u003A\u003AsetWithoutPPR\u0028\u0029",
             "name": "setWithoutPPR",
             "summary": "Set\u0020without\u0020w\u003ApPr.",
@@ -16925,6 +16985,11 @@ Search.appendIndex(
             "name": "isInline",
             "summary": "Is\u0020inline\u0020in\u0020element.",
             "url": "classes/PhpOffice-PhpWord-Writer-Word2007-Style-Paragraph.html#property_isInline"
+        },                {
+            "fqsen": "\\PhpOffice\\PhpWord\\Writer\\Word2007\\Style\\Paragraph\u003A\u003A\u0024outlineLevel",
+            "name": "outlineLevel",
+            "summary": "Outline\u0020level\u0020of\u0020a\u0020heading\u0020style,\u0020written\u0020as\u0020w\u003AoutlineLvl.",
+            "url": "classes/PhpOffice-PhpWord-Writer-Word2007-Style-Paragraph.html#property_outlineLevel"
         },                {
             "fqsen": "\\PhpOffice\\PhpWord\\Writer\\Word2007\\Style\\Row",
             "name": "Row",
